@@ -19,10 +19,13 @@ body {
     font-size: 24px;
     padding-left: 15px;
     margin-bottom: 20px;
+    width: 100%; /* Bu hizalamayı sağladı...*/
+    text-align: left;
 }
 .card {
     background-color: white;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +38,7 @@ body {
     border-radius: 5px;
     background-color: white;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .accordion-header {
@@ -73,4 +77,28 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+    .Faq {
+        font-size: 20px; /* Daha küçük ekranlar için font boyutu */
+    }
+
+    .card {
+        width: 95%; /* Küçük ekranlarda kartın genişliğini artır */
+        padding: 15px; /* Küçük ekranlarda padding azalt */
+    }
+
+    .accordion-header h5 {
+        font-size: 14px; /* Mobil için başlık boyutu */
+    }
+}
+
+@media (max-width: 480px) {
+    .Faq {
+        font-size: 18px; /* Daha küçük mobil cihazlar için font boyutu */
+    }
+
+    .accordion-header h5 {
+        font-size: 12px; /* Daha küçük mobil cihazlar için başlık boyutu */
+    }
 }
