@@ -1,9 +1,14 @@
 body{
     background-image: url(./assets/images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
     margin: 0;
+    height: 130vh;
     font-family: 'Work Sans', sans-serif;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
 .attribution { 
@@ -12,3 +17,11 @@ body{
 .attribution a {
      color: hsl(228, 45%, 44%); 
     }
+.card{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 400px;
+
+}
