@@ -1,3 +1,11 @@
+body{
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+
+}
 .attribution { 
     font-size: 11px; text-align: center; 
 }
